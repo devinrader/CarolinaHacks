@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="container">
+
+    <div style="text-align:right"><a href="http://twitter.com/carolinahacks"><img src="@Url.Content("~/Content/images/twitter-bird-dark-bgs.png")" style="height:35px;width:35px;" /></a></div>
+
+    @using(Html.BeginForm()) {
+
+    <div class="hero-unit hero-alpha-fix">
+        <div class="row">
+            <div class="span6">
+                <h1>CarolinaHacks</h1>
+                <p>thats right, we're having a hackathon</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div>
+                    <div>enter your email and we'll send you the<br /> details when we announce them:</div>
+                    <div style="margin-top:3px;">
+                        <input type="text" name="email" id="email" required /><button type="submit" style="background-color:transparent;border-style:none"><i class="icon-circle-arrow-right" style="color:white;font-size: 25px;"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="span4">
+                <div>
+                    <p>
+                        <span>when: saturday, march 16, 2013</span><br />
+                        <span>where: <a href="http://packardplace.us/">packard place</a>, charlotte, nc</span>
+                    </p>
+                    <br />
+                    <p>at CarolinaHacks you can:</p>
+                    <ul>
+                        <li>bring an idea and build a team</li>
+                        <li>learn that new technology you've been wanting to</li>
+                        <li>see what you and your friends can build in 8 hours</li>
+                        <li>maybe even win some awesome prizes and have a ton of fun</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    }
+
+</div>
+
+<div class="container">
+
+    <footer>
+        <p>© CarolinaHacks 2012 | Photo © <a href="http://www.flickr.com/people/cwaldron/" tabindex="-1">Collin Waldron</a></p>
+    </footer>
+
+</div> <!-- /container -->
